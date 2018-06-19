@@ -94,10 +94,10 @@ $(document).keydown(function (event) {
 				var again = confirm("You just got lucky!\n\nPlay again?");
 			}
 			if (winStreak == 2) {
-				var again = confirm("Did you used a lifline?\n\nPlay again?");
+				var again = confirm("Did you use a lifline?\n\nPlay again?");
 			}
 			if (winStreak == 3) {
-				var again = confirm("Woa, slow down partner!\n\nPlay again?");
+				var again = confirm("Woa, slow down!\n\nPlay again?");
 			}
 			if (winStreak == 4) {
 				var again = confirm("Go to Las Wages!\n\nPlay again?");
@@ -123,21 +123,21 @@ $(document).keydown(function (event) {
 			$('#losses').append(losses);
 			setTimeout(function () {
 				if (losseStreak == 1) {
-					var again = confirm("hehehehe!\n\nPlay again?");
+					var again = confirm("hehehehe!\n\nPlay again?\n\nThe word was "+qt+lastWord+qt);
 				}
 				if (losseStreak == 2) {
-					var again = confirm("Spelling counts! :)\n\nPlay again?");
+					var again = confirm("Spelling counts! :)\n\nPlay again?\n\nThe word was "+qt+lastWord+qt);
 				}
 				if (losseStreak == 3) {
-					var again = confirm("Frustrated?\n\nPlay again?");
+					var again = confirm("Frustrated?\n\nPlay again?\n\nThe word was "+qt+lastWord+qt);
 				}
 				if (losseStreak == 4) {
-					var again = confirm("Ah, you are not trying, that makes sense!\n\nPlay again?");
+					var again = confirm("Ah, you are not trying, that makes sense!\n\nPlay again?\n\nThe word was "+qt+lastWord+qt);
 				}
 				if (losseStreak >= 5) {
-					var again = confirm("Take the monkey away from the keyboard!\n\nPlay again?");
+					var again = confirm("Take the monkey away from the keyboard!\n\nPlay again?\n\nThe word was "+qt+lastWord+qt);
 				}
-				var again = confirm("The word was " +qt+lastWord+qt+ ".\n\nJerry's game won!\n\nPlay again? ");
+								
 				if (again == true) {
 					resetjs();
 				}
